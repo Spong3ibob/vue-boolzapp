@@ -1,8 +1,20 @@
+/* reset */
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+}
+/* variabili colore */
+:root{
+    --background-secondary-color:#009688;
+    --background-primary-color:#dbdbd2;
+
+}
+/* body background */
+body{
+    background: linear-gradient(to bottom, var(--background-secondary-color) 20%, var(--background-primary-color) 0%)
+
 }
 
 .container{
