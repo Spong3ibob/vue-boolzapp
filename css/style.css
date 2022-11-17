@@ -19,6 +19,7 @@
     --color-message-received:#ffffff;
     --color-notification:#8edafc;
     --color-last-acces:#808080;
+    --color-time:#a3a3a3;
 }
 /* common */
 img{
@@ -87,9 +88,76 @@ aside{
 
 /* barra inserimento testo */
 .chat-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     height: 4.375rem;
     width: 100%;
     background-color: var(--background-color-chat-bar);
+}
+.text-bar{
+    height: 3.125rem;
+    width: 43.75rem;
+    border: none;
+    border-radius: 0.313rem;
+    padding-left: 0.938rem;
+}
+.icon-text{
+    padding: 1.563rem;
+    font-size: 1.25rem;
+    color: var(--secondary-icon-color);
+}
+/* messaggi */
+.message{
+    overflow: hidden;
+}
+.sent{
+    padding: 0.938rem;
+    min-height: 3.125rem;
+    max-width: 37.5rem;
+    min-width: 18.75rem;
+    height: 100%;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-message-sent);
+}
+.received{
+    padding: 0.938rem;
+    min-height: 3.125rem;
+    max-width: 37.5rem;
+    min-width: 18.75rem;
+    height: 100%;
+    border-radius: 0.625rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: var(--color-message-received);
+}
+.time-message{
+    position: absolute;
+    right: 0.188rem;
+    bottom: 0.188rem;
+    font-size: 0.75rem;
+    color: var(--color-time);
+}
+
+.container-message-sendt{
+    min-height: 3.75rem;
+    width: 100%;
+    padding: 0.313rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.container-message-received{
+    min-height: 3.75rem;
+    width: 100%;
+    padding: 0.313rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }

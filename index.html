@@ -22,6 +22,7 @@
     <div id="app" class="container">
         <aside></aside>
         <div class="container-chat">
+            <!-- contatto con cui sto chattando -->
             <div class="contact-chatting">
                 <div class="id-contact">
                     <img src="img/avatar_1.jpg" alt="">
@@ -36,10 +37,43 @@
                     <i class="fa-solid fa-ellipsis-vertical icon-settings"></i>
                 </div>
             </div>
-            <div class="chat-bar"></div>
+            <!-- messaggi -->
+            <div class="message">
+                <div class="container-message-sendt">
+                    <div class="sent">
+                        <p>Hai portato fuori il cane?</p> 
+                        <span class="time-message">15.30</span>
+                    </div>
+                </div>
+                <div class="container-message-sendt">
+                    <div class="sent">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat labore at cumque, laudantium quo praesentium voluptas assumenda rem iste quaerat obcaecati doloribus ut. Doloribus fugiat, ea vero laboriosam explicabo tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur, consequuntur hic, sapiente voluptas dolores numquam enim odit neque dicta nostrum ex delectus vitae fugit eum asperiores corrupti, quam deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit ullam placeat dolores aspernatur cupiditate animi nulla nihil reiciendis atque iure, in, hic mollitia a maiores ducimus soluta eligendi earum? </p> 
+                        <span class="time-message">15.30</span>
+                    </div>
+                </div>
+                <div class="container-message-received">
+                    <div class="received">
+                        <p>Tutto fatto!</p> 
+                        <span class="time-message">15.30</span>
+                    </div>
+                </div>
+                <div class="container-message-received">
+                    <div class="received">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque exercitationem enim quo, in placeat atque magni molestias, non dicta necessitatibus officia omnis, obcaecati ullam. Harum doloribus aspernatur nisi unde!</p> 
+                        <span class="time-message">15.30</span>
+                    </div>
+                </div>
+            </div>
+            <!-- barra per chattare -->
+            <div class="chat-bar">
+                <i class="fa-regular fa-face-smile icon-text"></i>
+                <form action="">
+                    <input type="text" class="text-bar" placeholder="Scrivi un messaggio">
+                </form>
+                <i class="fa-solid fa-microphone icon-text"></i>
+            </div>
         </div>
     </div>
-    
     <script src="js/main.js"></script>
 </body>
 </html>
