@@ -9,19 +9,87 @@
 :root{
     --background-secondary-color:#009688;
     --background-primary-color:#dbdbd2;
-
+    --background-image: url(../img/mine.jpg);
+    --prymary-color:#ffffff;
+    --secondary-color:#eaeaea;
+    --background-color-chat-bar:#f3eeea;
+    --prymary-icon-color:#b1b1b1;
+    --secondary-icon-color:#6b7376;
+    --color-message-sent:#d5f9ba;
+    --color-message-received:#ffffff;
+    --color-notification:#8edafc;
+    --color-last-acces:#808080;
 }
+/* common */
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.icon-settings{
+    color: grey;
+    padding: 0.438rem;
+}
+
 /* body background */
 body{
-    background: linear-gradient(to bottom, var(--background-secondary-color) 20%, var(--background-primary-color) 0%)
-
+    background: linear-gradient(to bottom, var(--background-secondary-color) 20%, var(--background-primary-color) 0%);
+    height: 100vh;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+/* container general */
+.container{
+    height: 100%;
+    width: 78.125rem;
+    margin: auto;
+    display: flex;
+}
+/* container contatti */
+aside{
+    height: 100%;
+    width: 25rem;
+    background-color: coral;
+}
+/* container caht */
+.container-chat{
+    height: 100%;
+    width: 53.125rem;
+    background-image: var(--background-image);
+    position: relative;
+}
+/* contatto con cui stai chattando */
+.contact-chatting{
+    height: 4.375rem;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* id contatto */
+.id-contact{
+    display: flex;
+    align-items: center;
+    padding-left: 0.625rem;
+}
+.last-access{
+    color: var(--color-last-acces);
+    font-size: 0.875rem;
+}
+.name-access{
+    padding-left: 0.625rem;
+}
+/* inpostazioni contatto */
+.cath-settings{
+    padding-right: 0.938rem;
 }
 
-.container{
-    height: calc(100vh - 2.5rem);
-    width: 78.125rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
-    margin: auto;
-    background-color: blueviolet;
+/* barra inserimento testo */
+.chat-bar{
+    position: absolute;
+    bottom: 0;
+    height: 4.375rem;
+    width: 100%;
+    background-color: var(--background-color-chat-bar);
 }
