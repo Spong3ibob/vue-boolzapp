@@ -43,7 +43,7 @@ img{
     border-radius: 50%;
 }
 .icon-settings{
-    color: grey;
+    color: var(--color-time);
     padding: 0.438rem;
 }
 .id-contact{
@@ -144,9 +144,18 @@ img{
     width: 100%;
     display: flex;
     align-items: center;
+    position: relative;
     background-color: var(--prymary-color);
     border-bottom: 1px solid lightgrey;
 }
+.time-access{
+    font-size: 0.75rem;
+    position: absolute;
+    right: 0.25rem;
+    top: 0.25rem;
+    color: var(--color-time);
+}
+
 
 /* container caht */
 .container-chat{

@@ -50,97 +50,11 @@
                 </form>
             </div>
             <div class="contacts">
-                <div class="contact">
+                <div class="contact" v-for="(contact, index) in contacts">
                     <div class="id-contact">
                         <img src="img/avatar_1.jpg" alt="">
                         <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div>
-                <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div>
-                <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div>
-                <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div>
-                <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div>
-                <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div> <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div> <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div> <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
-                            <span class="last-access">Ultimo acceso oggi alle 12:00</span>
-                        </div>
-                    </div>
-                    <div class="time-access">12:00</div>
-                </div> <div class="contact">
-                    <div class="id-contact">
-                        <img src="img/avatar_1.jpg" alt="">
-                        <div class="name-access">
-                            <p>Michele</p>
+                            <p>{{ contacts.name }}</p>
                             <span class="last-access">Ultimo acceso oggi alle 12:00</span>
                         </div>
                     </div>
