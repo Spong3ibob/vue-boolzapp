@@ -20,6 +20,7 @@
     --color-notification:#8edafc;
     --color-last-acces:#808080;
     --color-time:#a3a3a3;
+    --color-backround-serch:#fafafa;
 }
 /* body background */
 body{
@@ -37,45 +38,14 @@ body{
 }
 /* common */
 img{
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
     border-radius: 50%;
 }
 .icon-settings{
     color: grey;
     padding: 0.438rem;
 }
-
-/* container contatti */
-aside{
-    height: 100%;
-    width: 25rem;
-    background-color: coral;
-}
-
-
-
-
-/* container caht */
-.container-chat{
-    height: 100%;
-    width: 53.125rem;
-    background-image: var(--background-image);
-    position: relative;
-    display: flex;/**/
-    flex-direction: column;/**/
-}
-/* contatto con cui stai chattando */
-.contact-chatting{
-    max-height: 4.375rem;
-    height: 100%;
-    width: 100%;
-    background-color: var(--secondary-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-/* id contatto */
 .id-contact{
     display: flex;
     align-items: center;
@@ -88,6 +58,116 @@ aside{
 .name-access{
     padding-left: 0.625rem;
 }
+
+/* container contatti */
+.container-contacts{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25rem;
+    background-color: var(--prymary-color);
+}
+.my-profile{
+    max-height: 4.375rem;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+/* mio profilo */
+.my-avatar{
+    display: flex;
+    align-items: center;
+    padding-left: 0.625rem;
+}
+.my-name{
+    padding-left: 0.625rem;
+}
+/* inpostazioni mio profilo */
+.profile-settings{
+    padding-right: 0.938rem;
+}
+/* notifiche */
+.notifications{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+    background-color: var(--color-notification);
+}
+.icon-notification{
+    font-size: 1.25rem;
+    padding: 0.625rem 0.5rem;
+    margin-left: 1.25rem;
+    border-radius: 50%;
+    background-color: var(--prymary-color);
+    color: var(--color-notification);
+}
+.message-notification{
+    padding-left: 0.625rem;
+}
+.message-notification p{
+    font-size: 0.938rem;
+}
+.message-notification a{
+    font-size: 0.813rem;
+    color: var(--secondary-icon-color);
+}
+/* barra di ricerca */
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3.125rem;
+    background-color: var(--background-color-chat-bar);
+}
+.search-bar i{
+    padding:  0.625rem;
+    background-color: var(--prymary-color);
+    border: none;
+
+}
+.bar{
+    height: 2.25rem;
+    width: 21.875rem;
+    border: none;
+}
+/* contatti */
+.contacts{
+    overflow-y: auto;
+}
+.contact{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--prymary-color);
+    border-bottom: 1px solid lightgrey;
+}
+
+/* container caht */
+.container-chat{
+    height: 100%;
+    width: 53.125rem;
+    background-image: var(--background-image);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+/* contatto con cui stai chattando */
+.contact-chatting{
+    max-height: 4.375rem;
+    height: 100%;
+    width: 100%;
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 /* inpostazioni contatto */
 .cath-settings{
     padding-right: 0.938rem;
