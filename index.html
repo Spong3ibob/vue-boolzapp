@@ -20,7 +20,7 @@
 </head>
 <body>
     <div id="app" class="container">
-        <!-- contatti -->
+        <!-- i miei contatti -->
         <div class="container-contacts">
             <!-- mio profilo -->
             <div class="my-profile">
@@ -49,7 +49,8 @@
                     <input type="text" class="bar" placeholder="Cerca o inizia una nuova cath">
                 </form>
             </div>
-            <div class="contacts">
+            <!-- contatti -->
+            <div class="contacts" @click="cathClick">
                 <div class="contact" v-for="(contact, index) in contacts">
                     <div class="id-contact">
                         <img :src=" `img/avatar${contact.avatar}.jpg`" alt="">
@@ -71,7 +72,7 @@
                 <div class="id-contact">
                     <img src="img/avatar_1.jpg" alt="">
                     <div class="name-access">
-                        <p>Michele</p>
+                        <p>Marco</p>
                         <span class="last-access">Ultimo acceso oggi alle 12:00</span>
                     </div>
                 </div>
@@ -82,28 +83,16 @@
                 </div>
             </div>
             <!-- messaggi -->
-            <div class="message">
-                <div class="container-message-sendt">
+            <div class="message" >
+                <div class="container-message-sendt" v-for="message in messages">
                     <div class="sent">
-                        <p>Hai portato fuori il cane?</p> 
-                        <span class="time-message">15.30</span>
-                    </div>
-                </div>
-                <div class="container-message-sendt">
-                    <div class="sent">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat labore at cumque, laudantium quo praesentium voluptas assumenda rem iste quaerat obcaecati doloribus ut. Doloribus fugiat, ea vero laboriosam explicabo tempora. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste tenetur, consequuntur hic, sapiente voluptas dolores numquam enim odit neque dicta nostrum ex delectus vitae fugit eum asperiores corrupti, quam deleniti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus suscipit ullam placeat dolores aspernatur cupiditate animi nulla nihil reiciendis atque iure, in, hic mollitia a maiores ducimus soluta eligendi earum? </p> 
+                        <p>{{ mesages.message }}?</p> 
                         <span class="time-message">15.30</span>
                     </div>
                 </div>
                 <div class="container-message-received">
                     <div class="received">
                         <p>Tutto fatto!</p> 
-                        <span class="time-message">15.30</span>
-                    </div>
-                </div>
-                <div class="container-message-received">
-                    <div class="received">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae doloremque exercitationem enim quo, in placeat atque magni molestias, non dicta necessitatibus officia omnis, obcaecati ullam. Harum doloribus aspernatur nisi unde!</p> 
                         <span class="time-message">15.30</span>
                     </div>
                 </div>

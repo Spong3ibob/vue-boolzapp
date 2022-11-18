@@ -21,6 +21,7 @@
     --color-last-acces:#808080;
     --color-time:#a3a3a3;
     --color-backround-serch:#fafafa;
+    --color-contact-active:#e9ebeb;
 }
 /* body background */
 body{
@@ -154,6 +155,9 @@ img{
     right: 0.25rem;
     top: 0.25rem;
     color: var(--color-time);
+}
+.active{
+    background-color: var(--color-contact-active);
 }
 
 

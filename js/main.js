@@ -3,6 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
+        currentCathIndex: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -168,6 +169,11 @@ const { createApp } = Vue
         ]
         
       }
+    },
+    methods: {
+        cathClick(){
+            console.log("cliccato")
+        },
     }
   }).mount('#app')
 
