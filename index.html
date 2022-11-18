@@ -52,7 +52,7 @@
             <div class="contacts">
                 <div class="contact" v-for="(contact, index) in contacts">
                     <div class="id-contact">
-                        <img src="contacts.(avatar._1).jpg" alt="">
+                        <img :src=" `img/avatar${contact.avatar}.jpg`" alt="">
                         <div class="name-access">
                             <p>{{ contact.name }}</p>
                             <span class="last-access">Ultimo acceso oggi alle 12:00</span>
