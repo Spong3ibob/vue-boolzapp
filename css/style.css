@@ -21,17 +21,6 @@
     --color-last-acces:#808080;
     --color-time:#a3a3a3;
 }
-/* common */
-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-}
-.icon-settings{
-    color: grey;
-    padding: 0.438rem;
-}
-
 /* body background */
 body{
     background: linear-gradient(to bottom, var(--background-secondary-color) 20%, var(--background-primary-color) 0%);
@@ -46,22 +35,40 @@ body{
     margin: auto;
     display: flex;
 }
+/* common */
+img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.icon-settings{
+    color: grey;
+    padding: 0.438rem;
+}
+
 /* container contatti */
 aside{
     height: 100%;
     width: 25rem;
     background-color: coral;
 }
+
+
+
+
 /* container caht */
 .container-chat{
     height: 100%;
     width: 53.125rem;
     background-image: var(--background-image);
     position: relative;
+    display: flex;/**/
+    flex-direction: column;/**/
 }
 /* contatto con cui stai chattando */
 .contact-chatting{
-    height: 4.375rem;
+    max-height: 4.375rem;
+    height: 100%;
     width: 100%;
     background-color: var(--secondary-color);
     display: flex;
@@ -93,7 +100,8 @@ aside{
     justify-content: center;
     position: absolute;
     bottom: 0;
-    height: 4.375rem;
+    max-height: 4.375rem;
+    height: 100%;
     width: 100%;
     background-color: var(--background-color-chat-bar);
 }
@@ -111,8 +119,17 @@ aside{
 }
 /* messaggi */
 .message{
-    overflow: hidden;
+    padding: 4.063rem 0;
+    overflow-y: auto;
 }
+.time-message{
+    position: absolute;
+    right: 0.188rem;
+    bottom: 0.188rem;
+    font-size: 0.75rem;
+    color: var(--color-time);
+}
+/* messaggi inviati */
 .sent{
     padding: 0.938rem;
     min-height: 3.125rem;
@@ -125,6 +142,15 @@ aside{
     position: relative;
     background-color: var(--color-message-sent);
 }
+.container-message-sendt{
+    min-height: 3.75rem;
+    width: 100%;
+    padding: 0.313rem 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+/* messaggi ricevuti */
 .received{
     padding: 0.938rem;
     min-height: 3.125rem;
@@ -136,22 +162,6 @@ aside{
     align-items: center;
     position: relative;
     background-color: var(--color-message-received);
-}
-.time-message{
-    position: absolute;
-    right: 0.188rem;
-    bottom: 0.188rem;
-    font-size: 0.75rem;
-    color: var(--color-time);
-}
-
-.container-message-sendt{
-    min-height: 3.75rem;
-    width: 100%;
-    padding: 0.313rem 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: right;
 }
 .container-message-received{
     min-height: 3.75rem;
