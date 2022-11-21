@@ -50,10 +50,10 @@
                 </form>
             </div>
             <!-- contatti -->
-            <div class="contacts" @click="cathClick(index)">
-                <div class="contact" v-for="(contact, index) in contacts">
+            <div class="contacts" >
+                <div class="contact" v-for="(contact, index) in contacts" @click="cathClick(index)">
                     <div class="id-contact">
-                        <img :src=" `img/avatar${contact.avatar}.jpg`" alt="">
+                        <img :src=" `img/avatar${contact.avatar}.jpg`" alt="" >
                         <div class="name-access">
                             <p>{{ contact.name }}</p>
                             <span class="last-access">Ultimo acceso oggi alle 12:00</span>
@@ -69,10 +69,10 @@
         <div class="container-chat">
             <!-- contatto con cui sto chattando -->
             <div class="contact-chatting">
-                <div class="id-contact" v-if="currentIndex = i">
-                    <img :src=" `img/avatar${contact.avatar}.jpg`" alt="">
+                <div class="id-contact">
+                    <img :src=" `img/avatar${index.contact.avatar}.jpg`" alt="">
                     <div class="name-access">
-                        <p>{{ contact.name }}</p>
+                        <p>{{ index.contact.name }}</p>
                         <span class="last-access">Ultimo acceso oggi alle 12:00</span>
                     </div>
                 </div>

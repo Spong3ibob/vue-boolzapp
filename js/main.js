@@ -173,7 +173,8 @@ const { createApp } = Vue
     },
     methods: {
         cathClick(i){
-            this.currentIndex = i;
+            // this.currentIndex = i;
+            console.log(i)
         },
         // addMessage(){
         //     this.messages.push(this.newMessage)
