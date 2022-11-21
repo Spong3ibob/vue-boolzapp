@@ -83,15 +83,15 @@
                 </div>
             </div>
             <!-- messaggi -->
-            <div class="message" >
-                <div class="container-message-sendt" v-for="message in messages">
-                    <div class="sent">
-                        <p>{{ mesages.message }}?</p> 
+            <div class="message-chat">
+                <div class="container-message">
+                    <div class="message sendt" v-for="message in messages">
+                        <p>{{ contact.messages }}</p> 
                         <span class="time-message">15.30</span>
                     </div>
                 </div>
-                <div class="container-message-received">
-                    <div class="received">
+                <div class="container-message">
+                    <div class="message received">
                         <p>Tutto fatto!</p> 
                         <span class="time-message">15.30</span>
                     </div>
@@ -100,7 +100,7 @@
             <!-- barra per chattare -->
             <div class="chat-bar">
                 <i class="fa-regular fa-face-smile icon-text"></i>
-                <form action="">
+                <form action="" v-model="addMessage">
                     <input type="text" class="text-bar" placeholder="Scrivi un messaggio">
                 </form>
                 <i class="fa-solid fa-microphone icon-text"></i>

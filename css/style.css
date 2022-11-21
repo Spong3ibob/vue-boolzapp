@@ -211,7 +211,7 @@ img{
     color: var(--secondary-icon-color);
 }
 /* messaggi */
-.message{
+.message-chat{
     padding: 4.063rem 0;
     overflow-y: auto;
 }
@@ -223,7 +223,7 @@ img{
     color: var(--color-time);
 }
 /* messaggi inviati */
-.sent{
+.message{
     padding: 0.938rem;
     min-height: 3.125rem;
     max-width: 37.5rem;
@@ -233,34 +233,18 @@ img{
     display: flex;
     align-items: center;
     position: relative;
+}
+.container-message{
+    min-height: 3.75rem;
+    width: 100%;
+    padding: 0.313rem 3.125rem;
+    display: flex;
+    align-items: center;
+}
+.sendt{
     background-color: var(--color-message-sent);
 }
-.container-message-sendt{
-    min-height: 3.75rem;
-    width: 100%;
-    padding: 0.313rem 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
-/* messaggi ricevuti */
 .received{
-    padding: 0.938rem;
-    min-height: 3.125rem;
-    max-width: 37.5rem;
-    min-width: 18.75rem;
-    height: 100%;
-    border-radius: 0.625rem;
-    display: flex;
-    align-items: center;
-    position: relative;
     background-color: var(--color-message-received);
 }
-.container-message-received{
-    min-height: 3.75rem;
-    width: 100%;
-    padding: 0.313rem 3.125rem;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
+

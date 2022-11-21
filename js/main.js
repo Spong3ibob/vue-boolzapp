@@ -3,7 +3,7 @@ const { createApp } = Vue
   createApp({
     data() {
       return {
-        currentCathIndex: 0,
+        newMessage:"",
         contacts: [
             {
                 name: 'Michele',
@@ -174,6 +174,8 @@ const { createApp } = Vue
         cathClick(){
             console.log("cliccato")
         },
+        addMessage(){
+            this.messages.push(this.newMessage)
+        }
     }
   }).mount('#app')
-
