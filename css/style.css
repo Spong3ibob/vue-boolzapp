@@ -241,6 +241,9 @@ img{
     display: flex;
     align-items: center;
 }
+.container-sendt{
+    justify-content: right;
+}
 .sendt{
     background-color: var(--color-message-sent);
 }

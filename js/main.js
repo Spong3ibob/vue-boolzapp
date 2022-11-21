@@ -173,6 +173,7 @@ const { createApp } = Vue
     },
     methods: {
         cathClick(i){
+
             // this.currentIndex = i;
             console.log(i)
         },
